@@ -1,0 +1,11 @@
+# Yerel araçlar, MCP / skill repoları (GitHub'a yüklenmez)
+.agents/
+skills/
+skills-lock.json
+
+# Sistem ve önbellek dosyaları
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
