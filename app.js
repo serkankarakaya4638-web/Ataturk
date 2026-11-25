@@ -3288,8 +3288,8 @@ const STOPS = [
     }
   });
 
-  // 14. Ambient Audio Player
-  const ambientAudio = new Audio('./audio/ambient-clouds.mp3');
+  // 14. Ambient Audio Player (Erik Satie - Gymnopédie No. 1, Public Domain)
+  const ambientAudio = new Audio('./audio/satie-gymnopedie-1.mp3');
   ambientAudio.loop = true;
   ambientAudio.preload = 'none';
   ambientAudio.volume = 0;
@@ -3343,7 +3343,7 @@ const STOPS = [
         .then(() => {
           audioBusy = false;
           setAudioUI(true);
-          rampVolume(0.18, 600);
+          rampVolume(0.26, 700);
         })
         .catch(() => {
           audioBusy = false;

@@ -1,10 +1,9 @@
-# Müzik kaynağı
+# Ses Kaynakları ve Lisans Bilgisi
 
-- Parça: Ambient Background music | Clouds
-- Sanatçı: Alex-Productions
-- Kaynak: https://freemusicarchive.org/music/alex-productions/single/ambient-background-music-clouds/
-- Dosya: ambient-clouds.mp3
-- Lisans: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
-- Atıf: Ambient Background music | Clouds by Alex-Productions
-
-Bu parça ticari olmayan kullanım için lisans koşullarına uygun şekilde projeye eklenmiştir. Ticari yayın için sanatçıdan uygun lisans alınmalıdır.
+## `satie-gymnopedie-1.mp3`
+- **Eser:** *Trois Gymnopédies — No. 1: Lent et douloureux* (1888)
+- **Besteci:** Erik Satie (1866–1925)
+- **İcra:** Robin Alciatore (Musopen)
+- **Kaynak:** https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg
+- **Lisans:** Kamu Malı (Public Domain)
+- **Dönüştürme Notu:** Özgün Ogg Vorbis kaydı, tüm tarayıcılar ve mobil cihazlarda (iOS Safari dâhil) sorunsuz oynatma için FFmpeg ile 128 kbps MP3 biçimine dönüştürülmüş ve ses düzeyi yumuşak arka plan dinlemesi için dengelenmiştir.
