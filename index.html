@@ -6,6 +6,7 @@
   <title>Mustafa Kemal Atatürk’ün Yolculuğu (1881–1953) | Etkileşimli Tarih Atlası</title>
   <meta name="description" content="Mustafa Kemal Atatürk’ün 1881’den 1938’e ve Anıtkabir’e uzanan eğitim, askerlik, Millî Mücadele ve Cumhuriyet yolculuğunu 120 tarihî durakla anlatan etkileşimli harita atlası." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="theme-color" content="#0d0c0b" />
 
   <meta property="og:type" content="website" />
@@ -38,6 +39,7 @@
   <!-- MapLibre GL JS -->
   <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./preview-nav.css" />
 
   <script type="application/ld+json">
 {
@@ -116,6 +118,14 @@
 
     <!-- Sağ: 3 sakin kontrol (Dizin, Hakkında, Ses) -->
     <div class="header-controls">
+      <a href="./devrimler.html" class="header-action header-reforms-link" aria-label="Devrimler ve Kurumlar Rehberini aç">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+        </svg>
+        <span>Devrimler</span>
+      </a>
+
       <button id="open-drawer-btn" type="button" class="header-action" aria-label="120 durak dizini ve dönemleri aç">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h10" />
@@ -186,6 +196,7 @@
           </p>
           <div class="hero-actions">
             <button id="start-journey-btn" type="button" class="btn-primary">Yolculuğa başla</button>
+            <a href="./devrimler.html" class="btn-secondary">Devrimler ve Kurumlar (45)</a>
           </div>
         </div>
         <figure class="hero-figure">
@@ -4785,6 +4796,7 @@
         </figure>
         <div class="epilogue-actions">
           <button id="epilogue-restart-btn" type="button" class="btn-secondary">Başa dön (1. durak)</button>
+          <a href="./devrimler.html" class="btn-primary">Devrimler ve Kurumlar Rehberini İncele</a>
         </div>
       </div>
     </section>
@@ -4860,6 +4872,19 @@
               alınarak hazırlanmıştır. Kronoloji ve yazım bütünlüğü düzenli olarak doğrulanır.
             </p>
           </article>
+
+          <article class="project-info__panel companion-guide-panel">
+            <h3>Devrimler ve Kurumlar Rehberi (1920–1938)</h3>
+            <p>
+              Hukuk, eğitim, kültür, kadın hakları, ekonomi-sanayi ve sağlık-savunma alanlarındaki
+              45 köklü dönüşümün <em>Öncesi</em>, <em>Kanun ve Kurumsal Adım</em>,
+              <em>Toplumsal Etkisi</em> ve 182 kurumsal <em>Birincil Kaynak</em> düzeninde
+              incelendiği eşlikçi modül.
+            </p>
+            <div class="companion-guide-panel__actions">
+              <a href="./devrimler.html" class="btn-secondary">Devrimler ve Kurumlar Rehberini Aç</a>
+            </div>
+          </article>
         </div>
 
         <article id="text-stops" class="text-stops-panel" aria-labelledby="text-stops-title">
@@ -4923,20 +4948,23 @@
       </div>
       <div class="atlas-drawer__controls">
         <label for="atlas-search-input" class="sr-only">Durak, yıl veya yer ara</label>
-        <input id="atlas-search-input" class="atlas-search-input" type="search" placeholder="Ara: ör. Çanakkale, Samsun, 1923, Lozan..." autocomplete="off" />
+        <input id="atlas-search-input" class="atlas-search-input" type="search" placeholder="Ara: ör. Çanakkale, Samsun, 1923, Lozan…" autocomplete="off" />
         <div class="atlas-filter-row" role="group" aria-label="Dönem filtresi">
-          <button type="button" class="atlas-filter-chip is-active" data-filter-era="all">Tümü (120)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="0">I. Dönem (6)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="1">II. Dönem (8)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="2">III. Dönem (6)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="3">IV. Dönem (12)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="4">V. Dönem (14)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="5">VI. Dönem (27)</button>
-          <button type="button" class="atlas-filter-chip" data-filter-era="6">VII. Dönem (47)</button>
+          <button type="button" class="atlas-filter-chip is-active" data-filter-era="all" aria-pressed="true">Tümü (120)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="0" aria-pressed="false">I. Dönem (6)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="1" aria-pressed="false">II. Dönem (8)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="2" aria-pressed="false">III. Dönem (6)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="3" aria-pressed="false">IV. Dönem (12)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="4" aria-pressed="false">V. Dönem (14)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="5" aria-pressed="false">VI. Dönem (27)</button>
+          <button type="button" class="atlas-filter-chip" data-filter-era="6" aria-pressed="false">VII. Dönem (47)</button>
         </div>
       </div>
       <p id="atlas-drawer-status" class="atlas-drawer__status" role="status" aria-live="polite">120 durak gösteriliyor</p>
       <div id="atlas-drawer-list" class="atlas-drawer__list"></div>
+      <div class="atlas-drawer__companion">
+        <a href="./devrimler.html" class="atlas-drawer__companion-link">Tematik Devrimler ve Kurumlar Rehberine geç (45 madde)</a>
+      </div>
     </div>
   </div>
 

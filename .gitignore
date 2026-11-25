@@ -9,3 +9,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Devrimler ve Kurumlar Rehberi araştırma ve doğrulama arşivi (HTML geçişine kadar yerel tutulur)
+devrimler-arastirma/

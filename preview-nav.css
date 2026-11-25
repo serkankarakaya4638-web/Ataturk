@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Ön İzleme Gezinme Katmanı — Devrimler ve Kurumlar Rehberi Bağlantıları
+   ========================================================================== */
+
+/* ---------- Üst Çubuk: Devrimler Bağlantısı ---------- */
+.header-reforms-link {
+  color: var(--ink-primary);
+  border-color: rgba(212, 174, 94, 0.28);
+  background: rgba(212, 174, 94, 0.08);
+}
+
+.header-reforms-link svg {
+  color: var(--accent-brass);
+}
+
+.header-reforms-link:hover {
+  color: var(--ink-primary);
+  background: var(--bg-chip-hover);
+  border-color: var(--accent-brass);
+}
+
+@media (max-width: 639px) {
+  .header-reforms-link {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8125rem;
+    gap: 0.3rem;
+  }
+
+  .header-reforms-link svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --header-h: 96px;
+  }
+
+  html {
+    scroll-padding-top: calc(var(--header-h) + var(--mobile-hud-h) + 1rem);
+  }
+
+  :focus,
+  :target,
+  [id] {
+    scroll-margin-top: calc(var(--header-h) + var(--mobile-hud-h) + 1rem);
+  }
+
+  .site-header {
+    height: auto;
+    min-height: var(--header-h);
+    flex-wrap: wrap;
+    padding: 0.35rem 0.65rem;
+    gap: 0.2rem 0.5rem;
+  }
+
+  .brand-link {
+    flex: 1 0 100%;
+    min-height: 40px;
+  }
+
+  .brand-title {
+    font-size: 0.92rem;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
+  .header-controls {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.3rem;
+  }
+
+  .header-controls .header-action,
+  .header-controls .header-reforms-link {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.8125rem;
+  }
+
+  .header-reforms-link {
+    margin-right: auto;
+  }
+}
+
+/* ---------- Hakkında Bölümü: Eşlikçi Modül Paneli ---------- */
+.companion-guide-panel {
+  border-color: var(--border-subtle);
+  background: var(--bg-elevated);
+}
+
+@media (min-width: 768px) {
+  .companion-guide-panel {
+    grid-column: 1 / -1;
+  }
+}
+
+.companion-guide-panel p {
+  max-width: 56ch;
+}
+
+.project-info__lead {
+  max-width: 56ch;
+}
+
+.story-media__caption {
+  text-wrap: pretty;
+}
+
+.companion-guide-panel__actions {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.companion-guide-panel .btn-secondary {
+  color: var(--ink-primary);
+  text-decoration: none;
+}
+
+.companion-guide-panel .btn-secondary:hover {
+  color: var(--ink-primary);
+  background: var(--bg-chip-hover);
+  border-color: var(--accent-brass);
+}
+
+/* ---------- Atlas Dizini Çekmecesi: Alt Eşlikçi Şerit ---------- */
+.atlas-drawer__companion {
+  flex: 0 0 auto;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+}
+
+.atlas-drawer__companion-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-chip);
+  color: var(--accent-brass);
+  font-size: 0.84rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+
+.atlas-drawer__companion-link:hover {
+  background: var(--bg-chip-hover);
+  border-color: var(--accent-brass);
+  color: var(--ink-primary);
+}
